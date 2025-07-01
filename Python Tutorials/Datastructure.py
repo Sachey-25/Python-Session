@@ -27,7 +27,7 @@ list=input("enter elements")
 #list=[] #empty list
 
 #list with elements
-list=[2,4,6,8,10]
+'''list=[2,4,6,8,10]
 
 #List with mixed dataTypes
 #list=[23,46,67,"abc",'sachin','shiv','neha',3456.567]
@@ -115,4 +115,97 @@ print(numbers[0:17:4])
 print(numbers[0:17:5])
 print(numbers[0:17:6])
 print(numbers[4:17:2])
-print(numbers[2:8:3])
+print(numbers[2:8:3])'''
+
+#List methods
+'''1. append(): Adds an element to the end of the list
+2. count(): Returns the number of times a specified
+element appears in the list
+3 copy(): Returns a shallow copy if the list
+4.clear(): Removes the number of times a specified element
+appears in the list.
+5. extend(): Adds element from another list to the end of
+the current list
+6. index(): Returns the index of the first occurance of
+specified currect list
+7. insert(): Inserts an element at a specified position
+8. pop(): Removes the first occurance of the list element
+[or removes the last element if the index not specified]
+9. reverse(): Reverse the order of the elements in the
+list
+10. remove():Removes the first occurance of a specified
+element
+11. sort():Sorts the list in ascending order (by default)
+'''
+
+#----> Data Structures <--- data ---> number,string
+
+list=[] #empty list
+#we need to add the element to the empty list
+'''#append()'''
+# we will use append method in order to add new elements
+#to the list, and append() method takes atleast one
+#parameter
+list.append(10) #item1 : 10
+list.append(11)
+list.append(12)
+list.append(13)
+list.append(14)
+
+print("Number list elements")
+print(list)
+#How to add the strings
+list.append('S')
+list.append('A')
+list.append('C')
+list.append('H')
+list.append('I')
+list.append('N')
+print("updated with string elements")
+print(list)
+
+list.append(9.34)
+list.append(True)
+list.append(False)
+
+list.append('RaceCar')
+
+print(list)
+print("-----------------")
+
+#Given list
+list_numbers=[12,13,14,5,8,20,18,25,27,30]
+
+#sort() # ascending order
+list_numbers.sort()
+print(list_numbers)
+
+#List to store the even numbers
+evenList=[]
+#Loop to the lenght of the the given list
+for i in list_numbers:
+    #check the condition for even numbers
+    if(i%2==0):
+        #append the values to empty list 
+        evenList.append(i)
+#print to see the values.
+print(evenList)
+
+listPop=[1,5,6,23,89,56,'SACHIN','D','I','N','O', 3.142,455.67,"AB","BA","aabbc","bbred"]
+#remove the elements ----> this can be done by two different methods.
+# pop() and # remove()
+listPop.pop() # without index
+print("Last element removed by default since no index")
+print(listPop)
+listPop.pop() # one more element is popped
+print("Last element removed by default since no index")
+print(listPop)
+print("Last element removed by default since no index")
+listPop.pop()
+print(listPop)
+print("4th element removed index 4")
+listPop.pop(4) #element index 4 : 89 should be popped
+print(listPop)
+print("Last element removed by default since no index")
+listPop.pop() # pop() <--- index, without index
+print(listPop)
